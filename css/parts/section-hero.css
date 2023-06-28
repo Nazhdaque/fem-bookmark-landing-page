@@ -1,0 +1,43 @@
+.hero {
+	margin-top: 11.25rem;
+}
+
+.hero__group {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.hero__txt {
+	display: grid;
+	gap: 1.25rem;
+	grid-auto-rows: min-content;
+	padding-right: 4rem;
+}
+
+.hero__buttons {
+	margin-top: 0.8rem;
+	display: grid;
+	grid-template-columns: repeat(2, min-content);
+	gap: 1rem;
+}
+.hero__btn:first-child {
+	justify-self: end;
+}
+.hero__btn:last-child {
+	justify-self: start;
+}
+
+.hero__img-container {
+	--radius: var(--rounded-left);
+}
+.hero__img-container::before {
+	top: 4rem;
+	left: 11.25rem;
+	height: var(--bg-height-fix);
+}
+
+.hero__img {
+	position: absolute;
+	top: -5rem;
+	width: 41rem;
+	aspect-ratio: 657 / 466;
+}

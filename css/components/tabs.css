@@ -1,0 +1,93 @@
+/* |||||||||||||||||||||||||||||||||||||||||||||||||| tablist */
+.tablist {
+	width: var(--width-2-3-fluid);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.tab {
+	--gap: 1.725rem;
+	--offset-y: 0.05rem;
+	--thickness: 0.25rem;
+
+	display: grid;
+	gap: var(--gap);
+	text-align: center;
+	outline: none;
+	transition: color var(--time) var(--easing);
+	border-bottom: 1px solid var(--clr-n-400-solid);
+}
+.tab::before {
+	content: "";
+	grid-row: 2;
+	margin-inline: auto;
+	width: 0;
+	height: var(--thickness);
+	background-color: var(--clr-p-400-solid);
+	transform: translateY(var(--offset-y));
+	transition: width var(--time) var(--easing);
+}
+.tab:where(:hover, :focus-visible) {
+	color: var(--clr-p-400-solid);
+}
+
+.tablist [aria-selected] {
+	color: var(--clr-n-800-solid);
+}
+.tablist [aria-selected]::before {
+	width: 100%;
+}
+
+/* |||||||||||||||||||||||||||||||||||||||||||||||||| tabpanel */
+.tabpanel__content {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.tabpanel__pic {
+	/* bg height: 22rem - from given layout */
+	/* img height: 346 / 416 / 380 - from given svgs */
+	/* 1rem = 16px */
+	--bg-height-fluid: calc((22 / (var(--img-height) / 16)) * 100%);
+	--radius: var(--rounded-right);
+
+	place-items: center end;
+}
+.tabpanel__pic:nth-child(1) {
+	--img-height: 346;
+}
+.tabpanel__pic:nth-child(2) {
+	--img-height: 416;
+}
+.tabpanel__pic:nth-child(3) {
+	--img-height: 380;
+}
+.tabpanel__pic::before {
+	top: clamp(2.3rem, 5vw + 1rem, 5.25rem);
+	right: 80px;
+	height: min(var(--bg-height-fix), var(--bg-height-fluid));
+}
+
+.tabpanel__img {
+	width: auto;
+	max-width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: left;
+	border-radius: 0.5rem;
+}
+
+.tabpanel__item {
+	display: grid;
+	justify-items: end;
+	height: 100%;
+	padding: 2.5rem 0 0 4rem;
+}
+
+.tabpanel__info {
+	max-width: 39ch;
+}
+
+.tabpanel__txt {
+	margin-block: 1.5rem 2rem;
+}

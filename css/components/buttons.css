@@ -1,0 +1,54 @@
+.btn {
+	--clr-bg: var(--clr);
+	--clr-txt: var(--clr-n-100-solid);
+	--btn-shadow: 0 0.85em 0.5em -0.5em hsl(var(--clr-p-500-alpha), 0.15);
+
+	line-height: 1;
+	padding: var(--btn-p-block) var(--btn-p-inline);
+	border: var(--btn-border-thickness) solid var(--clr);
+	background-color: var(--clr-bg);
+	color: var(--clr-txt);
+	border-radius: var(--btn-radius);
+	font-weight: var(--fw-md);
+	text-transform: inherit;
+	letter-spacing: inherit;
+	transition: color var(--time) var(--easing),
+		background-color var(--time) var(--easing),
+		border-color var(--time) var(--easing);
+	box-shadow: var(--btn-shadow);
+	max-width: 100%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.btn:where(:hover, :focus-visible) {
+	background-color: var(--clr-n-100-solid);
+	color: var(--clr);
+}
+
+.btn:active {
+	--clr: var(--clr-n-400-solid);
+}
+
+.btn--p-500 {
+	--clr: var(--clr-p-500-solid);
+}
+
+.btn--p-400 {
+	--clr: var(--clr-p-400-solid);
+}
+
+.btn--n-200 {
+	--clr: var(--clr-n-200-solid);
+	--clr-bg: var(--clr);
+	--clr-txt: var(--clr-n-700-solid);
+}
+.btn--n-200:where(:hover, :focus-visible) {
+	--clr: var(--clr-n-700-solid);
+	--clr-bg: transparent;
+}
+
+.btn--uppercased {
+	padding-inline: 2.25em;
+}

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+				content="IE=edge">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<title>FEM | Bookmark landing page</title>
+	<meta name="description"
+				content="Frontend Mentor challenge solution using Accordion-JS and JustValidate">
+	<!-- Open Graph / Facebook -->
+	<meta property="og:title"
+				content="FEM | Bookmark landing page">
+	<meta property="og:description"
+				content="Frontend Mentor challenge solution using Accordion-JS and JustValidate">
+	<meta property="og:type"
+				content="website">
+	<meta property="og:url"
+				content="https://nazhdaque.github.io/fem-bookmark-landing-page/">
+	<meta property="og:image"
+				content="./images/preview.jpg">
+	<meta property="og:image:width"
+				content="900">
+	<meta property="og:image:height"
+				content="660">
+	<!-- Twitter -->
+	<meta name="twitter:card"
+				content="summary_large_image">
+	<meta name="twitter:title"
+				content="FEM | Bookmark landing page">
+	<meta name="twitter:description"
+				content="Frontend Mentor challenge solution using Accordion-JS and JustValidate">
+	<meta name="twitter:url"
+				content="https://nazhdaque.github.io/fem-bookmark-landing-page/">
+	<meta name="twitter:image"
+				content="./images/preview.jpg">
+	<link rel="icon"
+				type="image/png"
+				sizes="32x32"
+				href="/images/favicon-32x32.png">
+</head>
+
+<body class="base-layout">
+	<header class="main-header limiter">
+		<div class="main-header__group">
+			<a href="#"
+				 class="brand-logo logo-link"
+				 aria-label="home">
+				<svg class="logo-link__img">
+					<use href="/images/sprites/brand.svg#logo-bookmark"></use>
+				</svg>
+			</a>
+
+			<nav class="md--d-none">
+				<ul class="nav-links tt-upp l-spacing-sm">
+					<li><a href="#"
+							 class="nav-links__link txt-2xs">Features</a></li>
+					<li><a href="#"
+							 class="nav-links__link txt-2xs">Pricing</a></li>
+					<li><a href="#"
+							 class="nav-links__link txt-2xs">Contact</a></li>
+					<li><button class="btn txt-2xs btn--p-400 btn--uppercased">Login</button></li>
+				</ul>
+			</nav>
+
+			<button class="toggle md--d-grid"
+							aria-label="show / hide navigation panel">
+				<span class="toggle-img"></span>
+			</button>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero limiter">
+			<div class="hero__group grid-items-c md--grid-temp-col-1">
+				<div class="hero__txt md--padding-0">
+					<h1 class="ttl-lg md--t-align-c">A Simple Bookmark Manager</h1>
+					<p class="md--t-align-c">A clean and simple interface to organize your favourite websites. Open a new
+						browser tab and see your sites load instantly. Try it for free.</p>
+
+					<div class="hero__buttons">
+						<button class="btn txt-xs btn--p-500 hero__btn">Get it on Chrome</button>
+						<button class="btn txt-xs btn--n-200 hero__btn">Get it on Firefox</button>
+					</div>
+				</div>
+
+				<div class="hero__img-container img-bg md--order--1">
+					<img class="hero__img md--pos-static"
+							 src="/images/illustration-hero.svg"
+							 alt="">
+				</div>
+			</div>
+		</section>
+
+		<section class="cvp limiter">
+			<div class="cvp__top-group">
+				<div class="section-top grid-items-c sm--padding-0">
+					<h2 class="ttl-md">Features</h2>
+					<p>Our aim is to make it quick and easy for you to
+						access your favourite
+						websites.
+						Your bookmarks sync between your devices so you can access them on the go.</p>
+				</div>
+
+				<ul class="txt-rg tablist md--grid-temp-col-1"
+						role="tablist">
+					<li role="presentation">
+						<a href="#section-1"
+							 class="tab"
+							 role="tab"
+							 id="tab-1"
+							 aria-selected="true">Simple Bookmarking</a>
+					</li>
+
+					<li role="presentation">
+						<a href="#section-2"
+							 class="tab"
+							 role="tab"
+							 id="tab-2"
+							 tabindex="-1">Speedy Searching</a>
+					</li>
+
+					<li role="presentation">
+						<a href="#section-3"
+							 class="tab"
+							 role="tab"
+							 id="tab-3"
+							 tabindex="-1">Easy Sharing</a>
+					</li>
+				</ul>
+			</div>
+
+			<section id="section-1"
+							 role="tabpanel"
+							 aria-labelledby="tab-1"
+							 aria-hidden="false"
+							 tabindex="-1">
+				<div class="tabpanel__content md--grid-temp-col-1">
+					<picture class="tabpanel__pic img-bg md--place-items-c">
+						<img class="tabpanel__img"
+								 src="/images/illustration-features-tab-1.svg"
+								 alt="">
+					</picture>
+
+					<div class="tabpanel__item md--place-items-c md--padding-0">
+						<div class="tabpanel__info md--t-align-c">
+							<h3 class="ttl-md">Bookmark in one click</h3>
+							<p class="tabpanel__txt">Organize your bookmarks however you like. Our simple drag-and-drop
+								interface
+								gives you complete control over how you manage your favourite sites.</p>
+							<button class="btn txt-xs btn--p-500 md--d-none">More Info</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="section-2"
+							 role="tabpanel"
+							 aria-labelledby="tab-2"
+							 aria-hidden="true"
+							 tabindex="-1"
+							 hidden>
+				<div class="tabpanel__content md--grid-temp-col-1">
+					<picture class="tabpanel__pic img-bg md--place-items-c">
+						<img class="tabpanel__img"
+								 src="/images/illustration-features-tab-2.svg"
+								 alt="">
+					</picture>
+
+					<div class="tabpanel__item md--place-items-c md--padding-0">
+						<div class="tabpanel__info md--t-align-c">
+							<h3 class="ttl-md">Intelligent search</h3>
+							<p class="tabpanel__txt">Our powerful search feature will help you find saved sites in no
+								time at all.
+								No need to trawl through all of your bookmarks.</p>
+							<button class="btn txt-xs btn--p-500 md--d-none">More Info</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="section-3"
+							 role="tabpanel"
+							 aria-labelledby="tab-3"
+							 aria-hidden="true"
+							 tabindex="-1"
+							 hidden>
+				<div class="tabpanel__content md--grid-temp-col-1">
+					<picture class="tabpanel__pic img-bg md--place-items-c">
+						<img class="tabpanel__img"
+								 src="/images/illustration-features-tab-3.svg"
+								 alt="">
+					</picture>
+
+					<div class="tabpanel__item md--place-items-c md--padding-0">
+						<div class="tabpanel__info md--t-align-c">
+							<h3 class="ttl-md">Share your bookmarks</h3>
+							<p class="tabpanel__txt">Easily share your bookmarks and collections with others. Create a
+								shareable
+								link that you can send at the click of a button.</p>
+							<button class="btn txt-xs btn--p-500 md--d-none">More Info</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<section class="cta limiter grid-items-c">
+			<div class="section-top grid-items-c sm--padding-0">
+				<h2 class="ttl-md">Download the extension</h2>
+				<p>We’ve got more browsers in the pipeline. Please do let
+					us know if
+					you’ve
+					got a favourite you’d like us to prioritize.</p>
+			</div>
+
+			<div class="cards md--grid-temp-col-1 md--padding-0">
+				<div class="card grid-items-c">
+					<div class="card__top">
+						<svg class="card__img">
+							<use href="/images/sprites/browsers.svg#logo-chrome"></use>
+						</svg>
+						<h3 class="ttl-sm">Add to Chrome</h3>
+						<p class="txt-xs card__txt">Minimum version 62</p>
+					</div>
+					<img class="dots"
+							 src="/images/bg-dots.svg"
+							 alt="">
+					<button class="btn txt-xs btn--p-500">Add & Install Extension</button>
+				</div>
+
+				<div class="card grid-items-c">
+					<div class="card__top">
+						<svg class="card__img">
+							<use href="/images/sprites/browsers.svg#logo-firefox"></use>
+						</svg>
+						<h3 class="ttl-sm">Add to Firefox</h3>
+						<p class="txt-xs card__txt">Minimum version 55</p>
+					</div>
+					<img class="dots"
+							 src="/images/bg-dots.svg"
+							 alt="">
+					<button class="btn txt-xs btn--p-500">Add & Install Extension</button>
+				</div>
+
+				<div class="card grid-items-c">
+					<div class="card__top">
+						<svg class="card__img">
+							<use href="/images/sprites/browsers.svg#logo-opera"></use>
+						</svg>
+						<h3 class="ttl-sm">Add to Opera</h3>
+						<p class="txt-xs card__txt">Minimum version 46</p>
+					</div>
+					<img class="dots"
+							 src="/images/bg-dots.svg"
+							 alt="">
+					<button class="btn txt-xs btn--p-500">Add & Install Extension</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="faq limiter grid-items-c">
+			<div class="section-top grid-items-c sm--padding-0">
+				<h2 class="ttl-md md--t-align-c">Frequently Asked Questions</h2>
+				<p>Here are some of our FAQs. If you have any other
+					questions you’d like
+					answered please feel free to email us.</p>
+			</div>
+
+			<div class="ac-container">
+				<div class="ac">
+					<h3 class="txt-md">
+						<button type="button"
+										class="ac-trigger">What is Bookmark?
+							<svg class="ac-arrow">
+								<use href="/images/sprites/ac-arrow.svg#icon-arrow"></use>
+							</svg>
+						</button>
+					</h3>
+
+					<div class="ac-panel">
+						<p class="ac-text txt-rg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+							justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+					</div>
+				</div>
+
+				<div class="ac">
+					<h3 class="txt-md">
+						<button type="button"
+										class="ac-trigger">How can I request a new browser?
+							<svg class="ac-arrow">
+								<use href="/images/sprites/ac-arrow.svg#icon-arrow"></use>
+							</svg>
+						</button>
+					</h3>
+
+					<div class="ac-panel">
+						<p class="ac-text txt-rg">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non
+							ligula.
+							Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+							ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+							Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+					</div>
+				</div>
+
+				<div class="ac">
+					<h3 class="txt-md">
+						<button type="button"
+										class="ac-trigger">Is there a mobile app?
+							<svg class="ac-arrow">
+								<use href="/images/sprites/ac-arrow.svg#icon-arrow"></use>
+							</svg>
+						</button>
+					</h3>
+
+					<div class="ac-panel">
+						<p class="ac-text txt-rg">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum
+							dolor, ut
+							condimentum
+							urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+							sollicitudin ex et ultricies bibendum.</p>
+					</div>
+				</div>
+
+				<div class="ac">
+					<h3 class="txt-md">
+						<button type="button"
+										class="ac-trigger">What about other Chromium browsers?
+							<svg class="ac-arrow">
+								<use href="/images/sprites/ac-arrow.svg#icon-arrow"></use>
+							</svg>
+						</button>
+					</h3>
+
+					<div class="ac-panel">
+						<p class="ac-text txt-rg">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod
+							dui.
+							Aliquam
+							vitae neque eget nisl gravida pellentesque non ut velit.</p>
+					</div>
+				</div>
+			</div>
+
+			<button class="btn txt-xs btn--p-500">More Info</button>
+		</section>
+
+		<section class="sign-up grid-items-c limiter">
+			<div class="sign-up__group grid-items-c">
+				<p class="txt-2xs tt-upp l-spacing-md txt-clr-n-100">35,000+ already joined</p>
+				<h2 class="ttl-md txt-clr-n-100">Stay up-to-date with what we’re doing</h2>
+
+				<form class="sign-up__form txt-xs sm--flex-d-col"
+							id="sign-up-form">
+					<div class="sign-up__form-item">
+						<label for="email"
+									 class="sr-only">Email Address</label>
+						<input class="input-field"
+									 id="email"
+									 type="email"
+									 name="email"
+									 inputmode="email"
+									 placeholder="Enter your email adress"
+									 autocomplete="on">
+					</div>
+
+					<div class="sign-up__form-item">
+						<button class="btn txt-xs btn--p-400"
+										id="submit-form"
+										type="submit">Contact Us</button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer class="main-footer limiter">
+		<div class="main-footer__group md--flex-d-col">
+			<a href="#"
+				 class="brand-logo logo-link"
+				 aria-label="home">
+				<svg class="logo-link__img">
+					<use href="/images/sprites/brand.svg#logo-bookmark"></use>
+				</svg>
+			</a>
+
+			<nav class="main-footer__nav">
+				<ul class="nav-links tt-upp l-spacing-sm txt-clr-n-100 md--flex-d-col txt-2xs md--txt-2xs--xs">
+					<li><a class="nav-links__link"
+							 href="">Features</a></li>
+					<li><a class="nav-links__link"
+							 href="">Pricing</a></li>
+					<li><a class="nav-links__link"
+							 href="">Contact</a></li>
+				</ul>
+			</nav>
+
+			<ul class="social-links">
+				<li>
+					<a href="#"
+						 class="social-link logo-link">
+						<svg class="logo-link__img">
+							<use href="/images/sprites/social.svg#icon-facebook"></use>
+						</svg>
+					</a>
+				</li>
+
+				<li>
+					<a href="#"
+						 class="social-link logo-link">
+						<svg class="logo-link__img">
+							<use href="/images/sprites/social.svg#icon-twitter"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<dialog class="modal">
+		<ul class="txt-lg tt-upp">
+			<li><a href="">Features</a></li>
+			<li><a href="">Pricing</a></li>
+			<li><a href="">Contact</a></li>
+			<li><button>Login</button></li>
+		</ul>
+
+		<ul class="social-links">
+			<li>
+				<a href="#"
+					 class="social-link logo-link">
+					<svg class="logo-link__img">
+						<use href="/images/sprites/social.svg#icon-facebook"></use>
+					</svg>
+				</a>
+			</li>
+
+			<li>
+				<a href="#"
+					 class="social-link logo-link">
+					<svg class="logo-link__img">
+						<use href="/images/sprites/social.svg#icon-twitter"></use>
+					</svg>
+				</a>
+			</li>
+		</ul>
+	</dialog>
+
+	<script type="module"
+					src="/main.js"></script>
+</body>
+
+</html>

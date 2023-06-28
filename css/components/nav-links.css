@@ -1,0 +1,16 @@
+.nav-links {
+	--gap: 2.875rem;
+
+	display: flex;
+	align-items: center;
+	gap: var(--gap);
+	color: var(--clr-n-800-solid);
+}
+
+.nav-links__link {
+	transition: color var(--time) var(--easing);
+	outline: none;
+}
+.nav-links__link:where(:hover, :focus-visible) {
+	color: var(--clr-p-400-solid);
+}

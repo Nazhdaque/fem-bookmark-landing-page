@@ -1,0 +1,66 @@
+.sign-up__form {
+	--clr-failure: var(--clr-p-400-solid);
+	--clr-success: var(--clr-p-600-solid);
+	--gap: 1rem;
+
+	width: 100%;
+	display: flex;
+	gap: var(--gap);
+}
+.sign-up__form-item {
+	display: grid;
+	align-items: start;
+	position: relative;
+}
+.sign-up__form-item:first-child {
+	flex: 1;
+}
+
+.input-field {
+	--p-block: calc(var(--btn-p-block) - var(--btn-border-thickness));
+	--p-inline: calc(var(--btn-p-inline) - var(--btn-border-thickness));
+
+	padding: var(--p-block) var(--p-inline);
+	border-radius: var(--btn-radius);
+	font-size: inherit;
+	z-index: 1;
+	color: var(--clr-n-800-solid);
+	border: var(--btn-border-thickness) solid transparent;
+	outline: none;
+}
+.input-field::placeholder {
+	opacity: 0.25;
+}
+
+/* |||||||||||||||||||||||||||||||||||||||||||||||||| validation */
+.labels {
+	--offset-y: calc(-0.25em - var(--btn-border-thickness));
+
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: calc(100% + var(--offset-y));
+	color: var(--clr-n-100-solid) !important;
+	text-align: left;
+	border-radius: 0 0 var(--btn-radius) var(--btn-radius);
+	font-size: 0.6rem;
+	font-style: italic;
+	letter-spacing: 0.075em;
+	padding-block: 0.75em 0.5em;
+	padding-inline: 1.25em;
+}
+.error-label {
+	background-color: var(--clr-failure);
+}
+.success-label {
+	background-color: var(--clr-success);
+}
+
+.error-field {
+	--right: calc(var(--gap) - 1.25%);
+
+	border: var(--btn-border-thickness) solid var(--clr-failure);
+	background-image: url(/images/icon-error.svg);
+	background-repeat: no-repeat;
+	background-position: right var(--right) center;
+}

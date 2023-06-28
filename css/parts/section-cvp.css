@@ -1,0 +1,16 @@
+.cvp {
+	row-gap: 4.5rem;
+	margin-top: 12rem;
+}
+
+.cvp__top-group {
+	--gap: 4.25rem;
+
+	display: grid;
+	place-items: center;
+	row-gap: var(--gap);
+}
+
+.cvp .section-summary {
+	margin-block: 1.5rem 4.25rem;
+}

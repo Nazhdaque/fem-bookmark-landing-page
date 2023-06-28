@@ -1,0 +1,54 @@
+:where(*, *::before, *::after) {
+	box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+	-webkit-box-sizing: border-box !important;
+	margin: 0;
+	padding: 0;
+}
+
+:where(img, picture, svg) {
+	width: 100%;
+	display: block;
+}
+
+:where(h1, h2, h3) {
+	color: var(--clr-n-800-solid);
+	line-height: var(--lh-sm);
+}
+
+:where(ul, ol) {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	outline: none;
+	font-size: inherit;
+	background: none;
+}
+
+*::selection {
+	background-color: hsl(var(--clr-p-500-alpha), 0.15);
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+body {
+	font-family: var(--ff-rg);
+	font-weight: var(--fw-rg);
+	font-size: var(--fs-500);
+	color: var(--clr-n-400-solid);
+	line-height: var(--lh-rg);
+	background-color: var(--clr-n-100-solid);
+	min-height: 100vh;
+	min-height: 100dvh;
+}

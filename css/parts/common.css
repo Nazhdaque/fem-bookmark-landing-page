@@ -1,0 +1,34 @@
+.logo-link {
+	display: block;
+	width: var(--logo-size);
+	aspect-ratio: var(--logo-aspect-ratio);
+	outline: none;
+}
+.logo-link__img {
+	width: 100%;
+	height: 100%;
+}
+/* === */
+.img-bg {
+	position: relative;
+	display: grid;
+	min-width: 100%;
+	min-height: 100%;
+}
+.img-bg::before {
+	position: absolute;
+	content: "";
+	width: var(--bg-width);
+	background-color: var(--clr-p-500-solid);
+	border-radius: var(--radius);
+	z-index: -1;
+}
+/* === */
+.section-top {
+	--gap: 1.5rem;
+
+	text-align: center;
+	max-width: var(--width-3-6);
+	row-gap: var(--gap);
+	padding-inline: 0.75rem;
+}

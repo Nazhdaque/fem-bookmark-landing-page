@@ -1,0 +1,65 @@
+.ac-container {
+	max-width: var(--width-3-6);
+}
+
+.ac {
+	--border: 1px solid var(--clr-n-400-solid);
+	--color: var(--clr-p-500-solid);
+	--color-active: var(--clr-p-400-solid);
+	--gap: 1.2em;
+	--width: 1em;
+
+	border-bottom: var(--border);
+}
+.ac:first-child {
+	border-top: var(--border);
+}
+
+.ac-trigger {
+	width: 100%;
+	display: flex;
+	gap: var(--gap);
+	justify-content: space-between;
+	padding: var(--gap) var(--gap) var(--gap) 0;
+	background-color: var(--clr-n-100-solid);
+	color: var(--clr-n-800-solid);
+	cursor: pointer;
+	position: relative;
+	transition: color var(--time) var(--easing);
+}
+.ac-trigger:where(:focus-visible, :hover) {
+	color: var(--color-active);
+}
+
+.ac-arrow {
+	stroke: var(--color);
+	width: var(--width);
+	min-width: var(--width);
+	aspect-ratio: 1;
+	transition: stroke var(--time) var(--easing),
+		transform var(--time) var(--easing);
+}
+
+.ac-panel {
+	overflow: hidden;
+	transition-property: height, visibility;
+	transition-timing-function: ease;
+}
+.ac-text {
+	line-height: 2;
+	padding-block: 1rem 2.5rem;
+}
+.ac.js-enabled .ac-panel {
+	visibility: hidden;
+}
+.ac.is-active .ac-panel {
+	visibility: visible;
+}
+
+.ac.is-active .ac-arrow,
+.ac-trigger:where(:focus-visible, :hover) .ac-arrow {
+	--color: var(--color-active);
+}
+.ac.is-active .ac-arrow {
+	transform: rotateX(180deg);
+}

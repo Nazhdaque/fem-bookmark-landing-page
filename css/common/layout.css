@@ -1,0 +1,14 @@
+.base-layout {
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
+}
+
+.limiter {
+	display: grid;
+	grid-template-columns: 1fr minmax(min-content, var(--max-content-width)) 1fr;
+	padding-inline: 1.25rem;
+}
+
+.limiter > *:not(.grid-item-full-width) {
+	grid-column: 2;
+}

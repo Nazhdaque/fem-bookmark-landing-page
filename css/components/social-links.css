@@ -1,0 +1,12 @@
+.social-links {
+	--logo-size: 1.5rem;
+	--logo-aspect-ratio: 1;
+	--logo-color: var(--clr-n-100-solid);
+
+	display: flex;
+	gap: 2rem;
+}
+
+.social-link:where(:hover, :focus) {
+	--logo-color: var(--clr-p-400-solid);
+}

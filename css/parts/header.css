@@ -1,0 +1,13 @@
+.main-header {
+	padding-top: 3rem;
+}
+
+.main-header__group {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.brand-logo:where(:hover, :focus-visible) {
+	--logo-simbol-color: var(--clr-p-400-solid);
+}

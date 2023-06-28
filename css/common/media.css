@@ -1,0 +1,145 @@
+@media (width <= 576px) {
+	.labels {
+		position: static;
+		margin-top: var(--offset-y);
+	}
+
+	.section-top {
+		--gap: 0.75rem;
+	}
+
+	.cvp__top-group {
+		--gap: 2.5rem;
+	}
+
+	/* |||||||||||||||||||||||||||||||||||||||||||||||||| utilities */
+	.sm--padding-0 {
+		padding: 0;
+	}
+	.sm--flex-d-col {
+		flex-direction: column;
+	}
+}
+
+@media (width <= 768px) {
+	:root {
+		--fs-900: 1.8rem;
+		--fs-800: 1.45rem;
+		--fs-500: 1rem;
+	}
+
+	/* |||||||||||||||||||||||||||||||||||||||||||||||||| hero */
+	.hero {
+		margin-top: 5rem;
+	}
+
+	.hero__group {
+		gap: 3.5rem;
+	}
+
+	.hero__img-container::before {
+		top: 21%;
+		left: 2.5rem;
+		height: 83.5%;
+	}
+
+	.hero__img {
+		--offset-left: 6.75%;
+		--offset-top: -1.5%;
+
+		margin-top: var(--offset-top);
+		margin-left: calc(var(--offset-left) * -1);
+		width: calc(100% + var(--offset-left) * 2);
+	}
+
+	.hero__buttons {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	/* |||||||||||||||||||||||||||||||||||||||||||||||||| cvp */
+	.cvp {
+		margin-top: 9.25rem;
+	}
+
+	.tabpanel__content {
+		gap: clamp(4.65rem, 20vw, 8rem);
+	}
+
+	.tab {
+		--gap: 1rem;
+
+		padding-top: var(--gap);
+		gap: var(--gap);
+	}
+
+	.tablist > *:first-child .tab {
+		border-top: 1px solid var(--clr-n-400-solid);
+	}
+
+	.tablist [aria-selected]::before {
+		width: min(8.875rem, 100%);
+	}
+
+	.tabpanel__pic::before {
+		right: 30vw;
+	}
+
+	/* |||||||||||||||||||||||||||||||||||||||||||||||||| cta */
+	.cta {
+		margin-top: 7.5rem;
+	}
+
+	.cards {
+		min-height: 100%;
+	}
+
+	/* |||||||||||||||||||||||||||||||||||||||||||||||||| faq */
+	.faq {
+		margin-top: 8.75rem;
+	}
+
+	/* |||||||||||||||||||||||||||||||||||||||||||||||||| sign-up */
+	.sign-up {
+		margin-top: 7.75rem;
+	}
+
+	/* |||||||||||||||||||||||||||||||||||||||||||||||||| footer */
+	.main-footer__group {
+		--gap: 2rem;
+	}
+	.nav-links {
+		--gap: 1.25rem;
+	}
+
+	/* |||||||||||||||||||||||||||||||||||||||||||||||||| utilities */
+	.md--txt-2xs--xs {
+		font-size: var(--fs-200);
+	}
+	.md--flex-d-col {
+		flex-direction: column;
+	}
+	.md--t-align-c {
+		text-align: center;
+	}
+	.md--pos-static {
+		position: static;
+	}
+	.md--padding-0 {
+		padding: 0;
+	}
+	.md--order--1 {
+		order: -1;
+	}
+	.md--place-items-c {
+		place-items: center;
+	}
+	.md--grid-temp-col-1 {
+		grid-template-columns: 1fr;
+	}
+	.md--d-none {
+		display: none;
+	}
+	.md--d-grid {
+		display: grid;
+	}
+}
