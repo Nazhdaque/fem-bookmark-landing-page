@@ -34,7 +34,8 @@ button {
 }
 
 *::selection {
-	background-color: hsl(var(--clr-p-500-alpha), 0.15);
+	background-color: hsl(var(--clr-p-400-alpha), 0.15);
+	color: var(--clr-n-800-solid);
 }
 
 html,
@@ -49,6 +50,4 @@ body {
 	color: var(--clr-n-400-solid);
 	line-height: var(--lh-rg);
 	background-color: var(--clr-n-100-solid);
-	min-height: 100vh;
-	min-height: 100dvh;
 }

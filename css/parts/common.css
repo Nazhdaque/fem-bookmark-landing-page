@@ -8,7 +8,7 @@
 	width: 100%;
 	height: 100%;
 }
-/* === */
+/* |||||||||| */
 .img-bg {
 	position: relative;
 	display: grid;
@@ -23,12 +23,16 @@
 	border-radius: var(--radius);
 	z-index: -1;
 }
-/* === */
-.section-top {
-	--gap: 1.5rem;
+/* |||||||||| */
+.info-block {
+	--gap-md: 1.35rem;
+	--gap-lg: 2.15rem;
 
-	text-align: center;
 	max-width: var(--width-3-6);
-	row-gap: var(--gap);
-	padding-inline: 0.75rem;
+}
+.info-block > *:nth-child(2) {
+	margin-top: var(--gap-md);
+}
+.info-block > *:nth-child(3) {
+	margin-top: var(--gap-lg);
 }

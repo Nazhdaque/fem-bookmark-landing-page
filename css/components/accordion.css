@@ -17,18 +17,21 @@
 
 .ac-trigger {
 	width: 100%;
-	display: flex;
-	gap: var(--gap);
-	justify-content: space-between;
 	padding: var(--gap) var(--gap) var(--gap) 0;
 	background-color: var(--clr-n-100-solid);
 	color: var(--clr-n-800-solid);
 	cursor: pointer;
 	position: relative;
 	transition: color var(--time) var(--easing);
+	display: grid;
+	grid-template-columns: 1fr min-content;
+	gap: var(--gap);
 }
 .ac-trigger:where(:focus-visible, :hover) {
 	color: var(--color-active);
+}
+.ac-trigger span {
+	text-align: left;
 }
 
 .ac-arrow {

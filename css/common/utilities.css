@@ -19,3 +19,13 @@
 	white-space: nowrap;
 	border: 0;
 }
+
+.ellipsis {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.t-align-c {
+	text-align: center;
+}

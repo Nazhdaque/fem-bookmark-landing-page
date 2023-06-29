@@ -4,12 +4,13 @@
 		margin-top: var(--offset-y);
 	}
 
-	.section-top {
-		--gap: 0.75rem;
-	}
-
 	.cvp__top-group {
 		--gap: 2.5rem;
+	}
+
+	.info-block:not(.hero .info-block) {
+		--gap-md: 0.75rem;
+		--gap-lg: 1.35rem;
 	}
 
 	/* |||||||||||||||||||||||||||||||||||||||||||||||||| utilities */
@@ -25,7 +26,7 @@
 	:root {
 		--fs-900: 1.8rem;
 		--fs-800: 1.45rem;
-		--fs-500: 1rem;
+		--fs-500: 0.9375rem;
 	}
 
 	/* |||||||||||||||||||||||||||||||||||||||||||||||||| hero */
@@ -87,6 +88,7 @@
 	/* |||||||||||||||||||||||||||||||||||||||||||||||||| cta */
 	.cta {
 		margin-top: 7.5rem;
+		gap: 2.5rem;
 	}
 
 	.cards {
@@ -103,10 +105,15 @@
 		margin-top: 7.75rem;
 	}
 
+	.sign-up__title {
+		margin-block: 0.65rem 2rem;
+	}
+
 	/* |||||||||||||||||||||||||||||||||||||||||||||||||| footer */
 	.main-footer__group {
 		--gap: 2rem;
 	}
+
 	.nav-links {
 		--gap: 1.25rem;
 	}

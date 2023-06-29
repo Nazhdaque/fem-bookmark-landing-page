@@ -3,10 +3,10 @@
 	--unit: 3rem;
 
 	--width-3-6: calc((var(--max-content-width) / 6) * 3);
-	--width-3-7: calc((var(--max-content-width) / 7) * 3);
 	--width-2-3-fluid: min((var(--max-content-width) / 3) * 2, 100%);
 
 	--clr-p-400-solid: hsl(0, 94%, 66%);
+	--clr-p-400-alpha: 0, 94%, 66%;
 	--clr-p-500-solid: hsl(231, 69%, 60%);
 	--clr-p-500-alpha: 231, 69%, 60%;
 	--clr-p-600-solid: hsl(93, 47%, 48%);
@@ -33,5 +33,5 @@
 	--btn-radius: 0.25rem;
 	--btn-border-thickness: 0.1rem;
 	--btn-p-block: 1em;
-	--btn-p-inline: 1.5em;
+	--btn-p-inline: clamp(1rem, 5vw - 1rem, 1.5rem);
 }

@@ -77,17 +77,11 @@
 	border-radius: 0.5rem;
 }
 
-.tabpanel__item {
+.tabpanel__info {
+	--padding-left: clamp(5rem, 5vw + 3rem, 7.5rem);
+
 	display: grid;
 	justify-items: end;
 	height: 100%;
-	padding: 2.5rem 0 0 4rem;
-}
-
-.tabpanel__info {
-	max-width: 39ch;
-}
-
-.tabpanel__txt {
-	margin-block: 1.5rem 2rem;
+	padding: 2.5rem 0 0 var(--padding-left);
 }
