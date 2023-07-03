@@ -1,5 +1,5 @@
 .main-header {
-	padding-top: 3rem;
+	padding-top: var(--header-p-top);
 }
 
 .main-header__group {
@@ -10,4 +10,11 @@
 
 .brand-logo:where(:hover, :focus-visible) {
 	--logo-simbol-color: var(--clr-p-400-solid);
+}
+
+/* --- */
+.header-placeholder {
+	max-height: 0;
+	overflow: hidden;
+	margin-bottom: var(--logo-height);
 }

@@ -1,16 +1,19 @@
 @media (width <= 576px) {
-	.labels {
-		position: static;
-		margin-top: var(--offset-y);
+	/* |||||||||||||||||||||||||||||||||||||||||||||||||| common */
+	.info-block:not(.hero .info-block) {
+		--gap-md: 0.75rem;
+		--gap-lg: 1.35rem;
 	}
 
+	/* |||||||||||||||||||||||||||||||||||||||||||||||||| cvp */
 	.cvp__top-group {
 		--gap: 2.5rem;
 	}
 
-	.info-block:not(.hero .info-block) {
-		--gap-md: 0.75rem;
-		--gap-lg: 1.35rem;
+	/* |||||||||||||||||||||||||||||||||||||||||||||||||| sign-up */
+	.labels {
+		position: static;
+		margin-top: var(--offset-y);
 	}
 
 	/* |||||||||||||||||||||||||||||||||||||||||||||||||| utilities */
@@ -27,6 +30,8 @@
 		--fs-900: 1.8rem;
 		--fs-800: 1.45rem;
 		--fs-500: 0.9375rem;
+
+		--header-p-top: 2rem;
 	}
 
 	/* |||||||||||||||||||||||||||||||||||||||||||||||||| hero */
@@ -88,11 +93,11 @@
 	/* |||||||||||||||||||||||||||||||||||||||||||||||||| cta */
 	.cta {
 		margin-top: 7.5rem;
-		gap: 2.5rem;
+		row-gap: 2.5rem;
 	}
 
 	.cards {
-		min-height: 100%;
+		gap: 0;
 	}
 
 	/* |||||||||||||||||||||||||||||||||||||||||||||||||| faq */

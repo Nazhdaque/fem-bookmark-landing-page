@@ -1,0 +1,146 @@
+/* |||||||||||||||||||||||||||||||||||||||||||||||||| common */
+.logo-link {
+	display: block;
+	width: var(--logo-size);
+	aspect-ratio: var(--logo-aspect-ratio);
+	outline: none;
+}
+.logo-link__img {
+	width: 100%;
+	height: 100%;
+}
+/* |||||||||| */
+.img-bg {
+	position: relative;
+	display: grid;
+	min-width: 100%;
+	min-height: 100%;
+}
+.img-bg::before {
+	position: absolute;
+	content: "";
+	width: var(--bg-width);
+	background-color: var(--clr-p-500-solid);
+	border-radius: var(--radius);
+	z-index: -1;
+}
+/* |||||||||| */
+.info-block {
+	--gap-md: 1.35rem;
+	--gap-lg: 2.15rem;
+
+	max-width: var(--width-3-6);
+}
+.info-block > *:nth-child(2) {
+	margin-top: var(--gap-md);
+}
+.info-block > *:nth-child(3) {
+	margin-top: var(--gap-lg);
+}
+
+/* |||||||||||||||||||||||||||||||||||||||||||||||||| hero */
+.hero {
+	margin-top: 11.25rem;
+}
+
+.hero__group {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.hero__txt {
+	padding-right: 4rem;
+}
+
+.hero__buttons {
+	display: grid;
+	grid-template-columns: repeat(2, max-content);
+	gap: 1rem;
+}
+.hero__btn:first-child {
+	justify-self: end;
+}
+.hero__btn:last-child {
+	justify-self: start;
+}
+
+.hero__img-container {
+	--radius: var(--rounded-left);
+}
+.hero__img-container::before {
+	top: 4rem;
+	left: 11.25rem;
+	height: var(--bg-height-fix);
+}
+
+.hero__img {
+	position: absolute;
+	top: -5rem;
+	width: 41rem;
+	aspect-ratio: 657 / 466;
+}
+
+/* |||||||||||||||||||||||||||||||||||||||||||||||||| cvp */
+.cvp {
+	row-gap: 4.5rem;
+	margin-top: 12rem;
+}
+
+.cvp__top-group {
+	--gap: 4.25rem;
+
+	display: grid;
+	place-items: center;
+	row-gap: var(--gap);
+}
+
+.cvp .section-summary {
+	margin-block: 1.5rem 4.25rem;
+}
+
+/* |||||||||||||||||||||||||||||||||||||||||||||||||| cta */
+.cta {
+	margin-top: 15.25rem;
+	row-gap: 3.75rem;
+}
+
+.cards {
+	--p-block: 2.5rem;
+
+	padding-block: var(--p-block);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+	height: calc(100% + var(--p-block) * 2);
+}
+
+.cards > *:nth-child(1) {
+	margin-bottom: auto;
+}
+.cards > *:nth-child(2) {
+	margin-block: auto;
+}
+.cards > *:nth-child(3) {
+	margin-top: auto;
+}
+
+/* |||||||||||||||||||||||||||||||||||||||||||||||||| faq */
+.faq {
+	margin-top: 9.5rem;
+	row-gap: 3.5rem;
+}
+
+/* |||||||||||||||||||||||||||||||||||||||||||||||||| sign-up */
+.sign-up {
+	margin-top: 9.5rem;
+	padding-block: 4.25rem;
+	background-color: var(--clr-p-500-solid);
+}
+
+.sign-up__group {
+	text-align: center;
+	max-width: 38ch;
+}
+
+.sign-up__title {
+	margin-block: 2.275rem;
+}

@@ -42,7 +42,7 @@
 				href="/images/favicon-32x32.png">
 </head>
 
-<body class="base-layout">
+<body class="base-layout root-scroller">
 	<header class="main-header limiter">
 		<div class="main-header__group">
 			<a href="#"
@@ -61,7 +61,7 @@
 							 class="nav-links__link txt-2xs">Pricing</a></li>
 					<li><a href="#"
 							 class="nav-links__link txt-2xs">Contact</a></li>
-					<li><button class="btn txt-2xs btn--p-400 btn--uppercased">Login</button></li>
+					<li><button class="btn txt-2xs btn--p-400">Login</button></li>
 				</ul>
 			</nav>
 
@@ -216,7 +216,7 @@
 					got a favourite you’d like us to prioritize.</p>
 			</div>
 
-			<div class="cards md--grid-temp-col-1 md--padding-0">
+			<div class="cards md--grid-temp-col-1">
 				<div class="card grid-items-c">
 					<div class="card__top">
 						<svg class="card__img">
@@ -418,15 +418,37 @@
 		</div>
 	</footer>
 
-	<dialog class="modal">
-		<ul class="txt-lg tt-upp">
-			<li><a href="">Features</a></li>
-			<li><a href="">Pricing</a></li>
-			<li><a href="">Contact</a></li>
-			<li><button>Login</button></li>
-		</ul>
+	<dialog class="modal tt-upp">
+		<header class="main-header limiter modal-header modal__controls">
+			<div class="main-header__group modal__controls">
+				<a href="#"
+					 class="brand-logo logo-link modal__controls"
+					 aria-label="home">
+					<svg class="logo-link__img">
+						<use href="/images/sprites/brand.svg#logo-bookmark"></use>
+					</svg>
+				</a>
 
-		<ul class="social-links">
+				<button class="toggle md--d-grid modal__controls"
+								aria-label="show / hide navigation panel">
+					<span class="toggle-img"></span>
+				</button>
+			</div>
+		</header>
+
+		<nav class="modal__nav-panel limiter">
+			<ul class="modal__nav-links l-spacing-sm">
+				<li><a class="modal__nav-link ellipsis modal__controls"
+						 href="#">Features</a></li>
+				<li><a class="modal__nav-link ellipsis modal__controls"
+						 href="#">Pricing</a></li>
+				<li><a class="modal__nav-link ellipsis modal__controls"
+						 href="#">Contact</a></li>
+				<li><button class="btn btn--p-400 outlined ellipsis modal__controls">Login</button></li>
+			</ul>
+		</nav>
+
+		<ul class="social-links limiter">
 			<li>
 				<a href="#"
 					 class="social-link logo-link">

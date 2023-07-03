@@ -7,6 +7,7 @@
 	--rotate-neg: calc(var(--rotate) * -1);
 	--space-neg: calc(var(--space) * -1);
 	--transform-neg: translateY(var(--space-neg)) rotate(var(--rotate-neg));
+	--toggle-clr: var(--clr-n-800-solid);
 
 	height: 72%;
 	aspect-ratio: 1;
@@ -19,12 +20,11 @@
 .toggle-img {
 	--bg-fill: linear-gradient(
 		to right,
-		var(--color) 0%,
-		var(--color) 51%,
+		var(--toggle-clr) 0%,
+		var(--toggle-clr) 51%,
 		transparent 51%,
 		transparent 100%
 	);
-	--color: var(--clr-n-800-solid);
 
 	width: 100%;
 	height: var(--thikness);
@@ -41,7 +41,7 @@
 	width: 100%;
 	height: 100%;
 	transition: transform var(--time);
-	background: var(--color);
+	background: var(--toggle-clr);
 }
 .toggle-img::before {
 	inset: var(--space-neg) 0 0 0;
@@ -51,14 +51,14 @@
 }
 
 .toggle:where(:focus-visible) .toggle-img {
-	--color: var(--clr-p-400-solid);
+	--toggle-clr: var(--clr-p-400-solid);
 
 	background: var(--bg-fill);
 	background-size: 300% auto;
 }
 .toggle:where(:focus-visible) .toggle-img::before,
 .toggle:where(:focus-visible) .toggle-img::after {
-	background: var(--color);
+	background: var(--toggle-clr);
 }
 .toggle.active .toggle-img {
 	background-position: right center;

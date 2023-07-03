@@ -1,21 +1,20 @@
 .btn {
-	--clr-bg: var(--clr);
-	--clr-txt: var(--clr-n-100-solid);
 	--btn-shadow: 0 0.85em 0.5em -0.5em hsl(var(--clr-p-500-alpha), 0.15);
 
-	line-height: 1;
-	padding: var(--btn-p-block) var(--btn-p-inline);
-	border: var(--btn-border-thickness) solid var(--clr);
-	background-color: var(--clr-bg);
-	color: var(--clr-txt);
+	color: var(--btn-clr-txt);
+	background-color: var(--btn-clr-bg);
+	border: var(--btn-border-thickness) solid var(--btn-clr-border);
+	box-shadow: var(--btn-shadow);
+
 	border-radius: var(--btn-radius);
 	font-weight: var(--fw-md);
+	line-height: 1;
+	padding: var(--btn-p-block) var(--btn-p-inline);
 	text-transform: inherit;
 	letter-spacing: inherit;
 	transition: color var(--time) var(--easing),
 		background-color var(--time) var(--easing),
 		border-color var(--time) var(--easing);
-	box-shadow: var(--btn-shadow);
 	max-width: 100%;
 	text-overflow: ellipsis;
 	white-space: nowrap;
@@ -23,32 +22,67 @@
 }
 
 .btn:where(:hover, :focus-visible) {
-	background-color: var(--clr-n-100-solid);
-	color: var(--clr);
+	color: var(--btn-clr-txt--focus-hover);
+	background-color: var(--btn-clr-bg--focus-hover);
+	border-color: var(--btn-clr-border--focus-hover);
 }
 
 .btn:active {
-	--clr: var(--clr-n-400-solid);
+	color: var(--btn-clr-txt--active);
+	background-color: var(--btn-clr-bg--active);
+	border-color: var(--btn-clr-border--active);
+}
+
+/* |||||||||| */
+.btn--p-500,
+.btn--p-400,
+.btn--n-200 {
+	--btn-clr-txt: var(--clr-n-100-solid);
+	--btn-clr-bg: var(--clr-base);
+	--btn-clr-border: var(--clr-base);
+	--btn-clr-active: var(--clr-n-400-solid);
+
+	--btn-clr-txt--focus-hover: var(--clr-base);
+	--btn-clr-bg--focus-hover: transparent;
+	--btn-clr-border--focus-hover: var(--clr-base);
+
+	--btn-clr-txt--active: var(--btn-clr-active);
+	--btn-clr-bg--active: transparent;
+	--btn-clr-border--active: var(--btn-clr-active);
 }
 
 .btn--p-500 {
-	--clr: var(--clr-p-500-solid);
+	--clr-base: var(--clr-p-500-solid);
 }
 
 .btn--p-400 {
-	--clr: var(--clr-p-400-solid);
+	--clr-base: var(--clr-p-400-solid);
 }
 
 .btn--n-200 {
-	--clr: var(--clr-n-200-solid);
-	--clr-bg: var(--clr);
-	--clr-txt: var(--clr-n-700-solid);
-}
-.btn--n-200:where(:hover, :focus-visible) {
-	--clr: var(--clr-n-700-solid);
-	--clr-bg: transparent;
+	--clr-base: var(--clr-n-200-solid);
+	--clr-accent: var(--clr-n-700-solid);
+
+	--btn-clr-txt: var(--clr-accent);
+	--btn-clr-txt--focus-hover: var(--clr-accent);
+	--btn-clr-border--focus-hover: var(--clr-accent);
 }
 
-.btn--uppercased {
-	padding-inline: 2.25em;
+.outlined {
+	--btn-clr-bg: transparent;
+	--btn-clr-border: var(--btn-clr-txt);
+	--btn-shadow: none;
+}
+
+/* |||||||||| */
+.main-header .btn {
+	--btn-p-inline: 2.25em;
+}
+
+.sign-up .btn {
+	--bg-clr: var(--clr-n-100-solid);
+
+	--btn-clr-bg--focus-hover: var(--bg-clr);
+	--btn-clr-bg--active: var(--bg-clr);
+	--btn-shadow: none;
 }

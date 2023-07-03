@@ -16,13 +16,8 @@
 @import url(./components/social-links.css) layer(components);
 @import url(./components/modal.css) layer(components);
 
-@import url(./parts/common.css) layer(parts);
 @import url(./parts/header.css) layer(parts);
-@import url(./parts/section-hero.css) layer(parts);
-@import url(./parts/section-cvp.css) layer(parts);
-@import url(./parts/section-cta.css) layer(parts);
-@import url(./parts/section-faq.css) layer(parts);
-@import url(./parts/section-sign-up.css) layer(parts);
+@import url(./parts/sections.css) layer(parts);
 @import url(./parts/footer.css) layer(parts);
 
 @import url(./common/utilities.css) layer(utilities);

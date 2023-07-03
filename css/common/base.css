@@ -1,7 +1,5 @@
 :where(*, *::before, *::after) {
 	box-sizing: border-box !important;
-	-moz-box-sizing: border-box !important;
-	-webkit-box-sizing: border-box !important;
 	margin: 0;
 	padding: 0;
 }

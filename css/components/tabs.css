@@ -74,7 +74,7 @@
 	height: 100%;
 	object-fit: cover;
 	object-position: left;
-	border-radius: 0.5rem;
+	border-radius: min(0.5rem, 1vw);
 }
 
 .tabpanel__info {

@@ -1,10 +1,10 @@
-.grid-items-c {
-	display: grid;
-	place-items: center;
-}
+.root-scroller {
+	block-size: 100dvb;
+	scrollbar-gutter: stable both-edges;
 
-.txt-clr-n-100 {
-	color: var(--clr-n-100-solid);
+	&:has(dialog[open]:modal) {
+		overflow: hidden;
+	}
 }
 
 .sr-only,
@@ -20,6 +20,15 @@
 	border: 0;
 }
 
+.grid-items-c {
+	display: grid;
+	place-items: center;
+}
+
+.txt-clr-n-100 {
+	color: var(--clr-n-100-solid);
+}
+
 .ellipsis {
 	text-overflow: ellipsis;
 	white-space: nowrap;
@@ -28,4 +37,8 @@
 
 .t-align-c {
 	text-align: center;
+}
+
+.v-visible {
+	visibility: visible;
 }
