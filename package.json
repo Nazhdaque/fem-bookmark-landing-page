@@ -12,6 +12,7 @@
 	},
 	"devDependencies": {
 		"gh-pages": "^5.0.0",
+		"lit-html": "^2.7.4",
 		"vite": "^4.3.9"
 	},
 	"dependencies": {

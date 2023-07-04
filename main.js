@@ -1,8 +1,12 @@
 import "./css/main.css";
-import "./js/tabs.js";
-import "./js/accordion.js";
+import "./js/cards-content.js";
 import "./js/form-validation.js";
+import "./js/social-links.js";
 import { Modal } from "./js/modal.js";
+await import("./js/tabs-content.js");
+await import("./js/tabs.js");
+await import("./js/accordion-content.js");
+await import("./js/accordion.js");
 
 const modal = new Modal();
 modal.initOn(768);

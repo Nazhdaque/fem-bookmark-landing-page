@@ -31,14 +31,18 @@
 	color: var(--clr-p-400-solid);
 }
 
-.tablist [aria-selected] {
+.tablist [aria-selected="true"]:not(:focus-visible) {
 	color: var(--clr-n-800-solid);
 }
-.tablist [aria-selected]::before {
+.tablist [aria-selected="true"]::before {
 	width: 100%;
 }
 
 /* |||||||||||||||||||||||||||||||||||||||||||||||||| tabpanel */
+[role="tabpanel"] {
+	outline: none;
+}
+
 .tabpanel__content {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);

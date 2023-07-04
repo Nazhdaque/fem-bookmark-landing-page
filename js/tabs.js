@@ -5,7 +5,7 @@ const panels = document.querySelectorAll("section[role='tabpanel']");
 tabs.forEach((tab, i) => {
 	tab.addEventListener("click", e => {
 		e.preventDefault();
-		const currentTab = tablist.querySelector("[aria-selected]");
+		const currentTab = tablist.querySelector("[aria-selected='true']");
 		e.currentTarget !== currentTab && switchTab(currentTab, e.currentTarget);
 	});
 
@@ -44,9 +44,11 @@ const switchTab = (prevTab, nextTab) => {
 	nextTab.removeAttribute("tabindex");
 	nextTab.setAttribute("aria-selected", "true");
 
-	prevTab.removeAttribute("aria-selected");
+	prevTab.setAttribute("aria-selected", "false");
 	prevTab.setAttribute("tabindex", "-1");
 
 	panels[tabs.indexOf(prevTab)].hidden = true;
+	panels[tabs.indexOf(prevTab)].setAttribute("aria-hidden", "true");
 	panels[tabs.indexOf(nextTab)].hidden = false;
+	panels[tabs.indexOf(nextTab)].setAttribute("aria-hidden", "false");
 };
