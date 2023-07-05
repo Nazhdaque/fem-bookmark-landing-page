@@ -33,7 +33,7 @@ const tabpanelTemplate = (index, title, text) => html`
 			<picture class="tabpanel__pic img-bg md--place-items-c">
 				<img
 					class="tabpanel__img"
-					src="/images/illustration-features-tab-${index + 1}.svg"
+					src="images/illustration-features-tab-${index + 1}.svg"
 					alt="" />
 			</picture>
 

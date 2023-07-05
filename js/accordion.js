@@ -12,7 +12,7 @@ const accTemplate = (question, answer) => html`
 			<button type="button" class="ac-trigger">
 				<span class="ellipsis">${question}</span>
 				<svg class="ac-arrow">
-					<use href="/images/sprites/ac-arrow.svg#icon-arrow"></use>
+					<use href="images/sprites/ac-arrow.svg#icon-arrow"></use>
 				</svg>
 			</button>
 		</h3>

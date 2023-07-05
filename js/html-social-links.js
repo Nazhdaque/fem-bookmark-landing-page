@@ -10,7 +10,7 @@ const linkTemplate = name => html`
 	<li>
 		<a href="#" class="social-link logo-link">
 			<svg class="logo-link__img">
-				<use href="/images/sprites/social.svg#icon-${name}"></use>
+				<use href="images/sprites/social.svg#icon-${name}"></use>
 			</svg>
 		</a>
 	</li>
