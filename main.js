@@ -1,9 +1,8 @@
 import "./css/main.css";
-// import "./js/html-tabs.js";
-// import "./js/html-cards.js";
-// import "./js/html-accordion.js";
-import "./js/accordion.js";
-// import "./js/html-social-links.js";
+import "./js/html-tabs.js";
+import "./js/html-cards.js";
+import "./js/html-accordion.js";
+import "./js/html-social-links.js";
 import "./js/form-validation.js";
 import { Modal } from "./js/modal.js";
 
