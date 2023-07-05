@@ -4,6 +4,7 @@
 	width: var(--logo-size);
 	aspect-ratio: var(--logo-aspect-ratio);
 	outline: none;
+	overflow: hidden;
 }
 .logo-link__img {
 	width: 100%;
