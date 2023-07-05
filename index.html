@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+				content="IE=edge">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<title>FEM | Bookmark landing page</title>
+	<meta name="description"
+				content="Frontend Mentor challenge solution using Accordion-JS and JustValidate">
+	<!-- Open Graph / Facebook -->
+	<meta property="og:title"
+				content="FEM | Bookmark landing page">
+	<meta property="og:description"
+				content="Frontend Mentor challenge solution using Accordion-JS and JustValidate">
+	<meta property="og:type"
+				content="website">
+	<meta property="og:url"
+				content="https://nazhdaque.github.io/fem-bookmark-landing-page/">
+	<meta property="og:image"
+				content="./images/preview.jpg">
+	<meta property="og:image:width"
+				content="900">
+	<meta property="og:image:height"
+				content="660">
+	<!-- Twitter -->
+	<meta name="twitter:card"
+				content="summary_large_image">
+	<meta name="twitter:title"
+				content="FEM | Bookmark landing page">
+	<meta name="twitter:description"
+				content="Frontend Mentor challenge solution using Accordion-JS and JustValidate">
+	<meta name="twitter:url"
+				content="https://nazhdaque.github.io/fem-bookmark-landing-page/">
+	<meta name="twitter:image"
+				content="./images/preview.jpg">
+	<link rel="icon"
+				type="image/png"
+				sizes="32x32"
+				href="/fem-bookmark-landing-page/images/favicon-32x32.png">
+  <script type="module" crossorigin src="/fem-bookmark-landing-page/assets/index-aac501f8.js"></script>
+  <link rel="stylesheet" href="/fem-bookmark-landing-page/assets/index-7e626588.css">
+</head>
+
+<body class="base-layout root-scroller">
+	<header class="main-header limiter">
+		<div class="main-header__group">
+			<a href="#"
+				 class="brand-logo logo-link"
+				 aria-label="home">
+				<svg class="logo-link__img">
+					<use href="/fem-bookmark-landing-page/images/sprites/brand.svg#logo-bookmark"></use>
+				</svg>
+			</a>
+
+			<nav class="md--d-none">
+				<ul class="nav-links tt-upp l-spacing-sm">
+					<li><a href="#"
+							 class="nav-links__link txt-2xs">Features</a></li>
+					<li><a href="#"
+							 class="nav-links__link txt-2xs">Pricing</a></li>
+					<li><a href="#"
+							 class="nav-links__link txt-2xs">Contact</a></li>
+					<li><button class="btn txt-2xs btn--p-400">Login</button></li>
+				</ul>
+			</nav>
+
+			<button class="toggle md--d-grid"
+							aria-label="show / hide navigation panel">
+				<span class="toggle-img"></span>
+			</button>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero limiter">
+			<div class="hero__group grid-items-c md--grid-temp-col-1">
+				<div class="hero__txt info-block md--padding-0">
+					<h1 class="ttl-lg md--t-align-c">A Simple Bookmark Manager</h1>
+					<p class="md--t-align-c">A clean and simple interface to organize your favourite websites. Open a new
+						browser tab and see your sites load instantly. Try it for free.</p>
+
+					<div class="hero__buttons">
+						<button class="btn txt-xs btn--p-500 hero__btn">Get it on Chrome</button>
+						<button class="btn txt-xs btn--n-200 hero__btn">Get it on Firefox</button>
+					</div>
+				</div>
+
+				<div class="hero__img-container img-bg md--order--1">
+					<img class="hero__img md--pos-static"
+							 src="/fem-bookmark-landing-page/images/illustration-hero.svg"
+							 alt="">
+				</div>
+			</div>
+		</section>
+
+		<section class="cvp limiter">
+			<div class="cvp__top-group">
+				<div class="info-block t-align-c">
+					<h2 class="ttl-md">Features</h2>
+					<p>Our aim is to make it quick and easy for you to
+						access your favourite
+						websites.
+						Your bookmarks sync between your devices so you can access them on the go.</p>
+				</div>
+				<!-- tablist -->
+			</div>
+			<!-- tabpanels -->
+		</section>
+
+		<section class="cta limiter grid-items-c">
+			<div class="info-block t-align-c">
+				<h2 class="ttl-md">Download the extension</h2>
+				<p>We’ve got more browsers in the pipeline. Please do let
+					us know if
+					you’ve
+					got a favourite you’d like us to prioritize.</p>
+			</div>
+
+			<div class="cards md--grid-temp-col-1">
+				<!-- cards -->
+			</div>
+		</section>
+
+		<section class="faq limiter grid-items-c">
+			<div class="info-block t-align-c">
+				<h2 class="ttl-md md--t-align-c">Frequently Asked Questions</h2>
+				<p>Here are some of our FAQs. If you have any other
+					questions you’d like
+					answered please feel free to email us.</p>
+			</div>
+
+			<div class="ac-container">
+				<!-- accordion -->
+			</div>
+
+			<button class="btn txt-xs btn--p-500">More Info</button>
+		</section>
+
+		<section class="sign-up grid-items-c limiter">
+			<div class="sign-up__group">
+				<p class="txt-2xs tt-upp l-spacing-md txt-clr-n-100">35,000+ already joined</p>
+				<h2 class="ttl-md txt-clr-n-100 sign-up__title">Stay up-to-date with what we’re doing</h2>
+
+				<form class="sign-up__form txt-xs sm--flex-d-col"
+							id="sign-up-form">
+					<div class="sign-up__form-item">
+						<label for="email"
+									 class="sr-only">Email Address</label>
+						<input class="input-field ellipsis"
+									 id="email"
+									 type="email"
+									 name="email"
+									 inputmode="email"
+									 placeholder="Enter your email adress"
+									 autocomplete="on">
+					</div>
+
+					<div class="sign-up__form-item">
+						<button class="btn txt-xs btn--p-400"
+										id="submit-form"
+										type="submit">Contact Us</button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer class="main-footer limiter">
+		<div class="main-footer__group md--flex-d-col">
+			<a href="#"
+				 class="brand-logo logo-link"
+				 aria-label="home">
+				<svg class="logo-link__img">
+					<use href="/fem-bookmark-landing-page/images/sprites/brand.svg#logo-bookmark"></use>
+				</svg>
+			</a>
+
+			<nav class="main-footer__nav">
+				<ul class="nav-links tt-upp l-spacing-sm txt-clr-n-100 md--flex-d-col txt-2xs md--txt-2xs--xs">
+					<li><a class="nav-links__link"
+							 href="">Features</a></li>
+					<li><a class="nav-links__link"
+							 href="">Pricing</a></li>
+					<li><a class="nav-links__link"
+							 href="">Contact</a></li>
+				</ul>
+			</nav>
+			<!-- social-links -->
+		</div>
+	</footer>
+
+	<dialog class="modal tt-upp">
+		<header class="main-header limiter modal-header modal__controls">
+			<div class="main-header__group modal__controls">
+				<a href="#"
+					 class="brand-logo logo-link modal__controls"
+					 aria-label="home">
+					<svg class="logo-link__img">
+						<use href="/fem-bookmark-landing-page/images/sprites/brand.svg#logo-bookmark"></use>
+					</svg>
+				</a>
+
+				<button class="toggle md--d-grid modal__controls"
+								aria-label="show / hide navigation panel">
+					<span class="toggle-img"></span>
+				</button>
+			</div>
+		</header>
+
+		<nav class="modal__nav-panel limiter">
+			<ul class="modal__nav-links l-spacing-sm">
+				<li><a class="modal__nav-link ellipsis modal__controls"
+						 href="#">Features</a></li>
+				<li><a class="modal__nav-link ellipsis modal__controls"
+						 href="#">Pricing</a></li>
+				<li><a class="modal__nav-link ellipsis modal__controls"
+						 href="#">Contact</a></li>
+				<li><button class="btn btn--p-400 outlined ellipsis modal__controls">Login</button></li>
+			</ul>
+		</nav>
+		<!-- social-links -->
+	</dialog>
+
+	
+</body>
+
+</html>
