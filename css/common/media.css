@@ -68,7 +68,7 @@
 	}
 
 	.tabpanel__content {
-		gap: clamp(4.65rem, 20vw, 8rem);
+		gap: 5rem;
 	}
 
 	.tab {
@@ -92,7 +92,7 @@
 
 	/* |||||||||||||||||||||||||||||||||||||||||||||||||| cta */
 	.cta {
-		margin-top: 7.5rem;
+		margin-top: 9.5rem;
 		row-gap: 2.5rem;
 	}
 
