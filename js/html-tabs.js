@@ -4,9 +4,9 @@ import { FetchWrapper } from "./fetchwrapper.js";
 const tabpanelsContainer = document.querySelector(".cvp");
 const tablistContainer = document.querySelector(".cvp__top-group");
 const API = new FetchWrapper("");
-const data = await API.get("tabs-data.json");
 const tabpanels = [];
 const tabs = [];
+
 const tabTemplate = (index, tabName) => html`
 	<li role="presentation">
 		<a
@@ -20,6 +20,7 @@ const tabTemplate = (index, tabName) => html`
 		>
 	</li>
 `;
+
 const tabpanelTemplate = (index, title, text) => html`
 	<section
 		id="section-${index + 1}"
@@ -46,20 +47,28 @@ const tabpanelTemplate = (index, title, text) => html`
 		</div>
 	</section>
 `;
+
 const tablistTemplate = tabs => html`
 	<ul class="txt-rg tablist md--grid-temp-col-1" role="tablist">
 		${tabs}
 	</ul>
 `;
-const tablist = tablistTemplate(tabs);
 
-data.forEach((entry, index) => {
-	const { tab: tabName, title, text } = entry;
-	const tab = tabTemplate(index, tabName);
-	tabs.push(tab);
-	const tabpanel = tabpanelTemplate(index, title, text);
-	tabpanels.push(tabpanel);
+// const data = await API.get("tabs-data.json");
+API.get("tabs-data.json").then(data => {
+	data.forEach((entry, index) => {
+		const { tab: tabName, title, text } = entry;
+		const tab = tabTemplate(index, tabName);
+		const tabpanel = tabpanelTemplate(index, title, text);
+		tabs.push(tab);
+		tabpanels.push(tabpanel);
+	});
+
+	const tablist = tablistTemplate(tabs);
+
+	render(tablist, tablistContainer);
+	render(tabpanels, tabpanelsContainer);
+
+	// ---
+	import("./tabs.js").then(data => data);
 });
-
-render(tablist, tablistContainer);
-render(tabpanels, tabpanelsContainer);

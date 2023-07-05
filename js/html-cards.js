@@ -1,12 +1,13 @@
 import { html, render } from "lit-html";
 
 const cardsContainer = document.querySelector(".cards");
-const capitalize = string => string[0].toUpperCase() + string.slice(1);
 const data = {
 	chrome: 62,
 	firefox: 55,
 	opera: 46,
 };
+const capitalize = string => string[0].toUpperCase() + string.slice(1);
+
 const cardTemplate = (name, version) => html`
 	<div class="card grid-items-c">
 		<div class="card__top">
@@ -20,6 +21,7 @@ const cardTemplate = (name, version) => html`
 		<button class="btn txt-xs btn--p-500">Add & Install Extension</button>
 	</div>
 `;
+
 const cards = [];
 
 for (const key in data) {
