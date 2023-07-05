@@ -8,7 +8,8 @@ const data = ["facebook", "twitter"];
 const links = [];
 const linkTemplate = name => html`
 	<li>
-		<a href="#" class="social-link logo-link">
+		<a href="#" class="social-link logo-link"
+			><span class="sr-only">${name}</span>
 			<svg class="logo-link__img">
 				<use href="images/sprites/social.svg#icon-${name}"></use>
 			</svg>

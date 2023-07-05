@@ -69,6 +69,10 @@ API.get("tabs-data.json").then(data => {
 	render(tablist, tablistContainer);
 	render(tabpanels, tabpanelsContainer);
 
+	document
+		.querySelectorAll("[aria-hidden='true']")
+		.forEach(el => el.removeAttribute("aria-hidden"));
+
 	// ---
 	import("./tabs.js").then(data => data);
 });

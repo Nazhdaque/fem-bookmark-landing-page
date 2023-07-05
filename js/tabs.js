@@ -48,7 +48,7 @@ const switchTab = (prevTab, nextTab) => {
 	prevTab.setAttribute("tabindex", "-1");
 
 	panels[tabs.indexOf(prevTab)].hidden = true;
-	panels[tabs.indexOf(prevTab)].setAttribute("aria-hidden", "true");
+	panels[tabs.indexOf(prevTab)].removeAttribute("aria-hidden");
 	panels[tabs.indexOf(nextTab)].hidden = false;
 	panels[tabs.indexOf(nextTab)].setAttribute("aria-hidden", "false");
 };
