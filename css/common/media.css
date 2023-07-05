@@ -82,7 +82,7 @@
 		border-top: 1px solid var(--clr-n-400-solid);
 	}
 
-	.tablist [aria-selected]::before {
+	.tablist [aria-selected="true"]::before {
 		width: min(8.875rem, 100%);
 	}
 
