@@ -28,7 +28,7 @@ var $e=Object.defineProperty;var we=(r,e,t)=>e in r?$e(r,e,{enumerable:!0,config
 			<picture class="tabpanel__pic img-bg md--place-items-c">
 				<img
 					class="tabpanel__img"
-					src="/images/illustration-features-tab-${r+1}.svg"
+					src="images/illustration-features-tab-${r+1}.svg"
 					alt="" />
 			</picture>
 
@@ -49,19 +49,19 @@ var $e=Object.defineProperty;var we=(r,e,t)=>e in r?$e(r,e,{enumerable:!0,config
 	<div class="card grid-items-c">
 		<div class="card__top">
 			<svg class="card__img">
-				<use href="/images/sprites/browsers.svg#logo-${r}"></use>
+				<use href="images/sprites/browsers.svg#logo-${r}"></use>
 			</svg>
 			<h3 class="ttl-sm">Add to ${We(r)}</h3>
 			<p class="txt-xs card__txt">Minimum version ${e}</p>
 		</div>
-		<img class="dots" src="/images/bg-dots.svg" alt="" />
+		<img class="dots" src="images/bg-dots.svg" alt="" />
 		<button class="btn txt-xs btn--p-500">Add & Install Extension</button>
 	</div>
 `,be=[];for(const r in he){const e=r,t=he[r],s=Ze(e,t);be.push(s)}B(be,Ue);const Xe=[document.querySelector(".main-footer__group"),document.querySelector(".modal")],Ye=["facebook","twitter"],ye=[],Je=r=>T`
 	<li>
 		<a href="#" class="social-link logo-link">
 			<svg class="logo-link__img">
-				<use href="/images/sprites/social.svg#icon-${r}"></use>
+				<use href="images/sprites/social.svg#icon-${r}"></use>
 			</svg>
 		</a>
 	</li>
@@ -73,7 +73,7 @@ var $e=Object.defineProperty;var we=(r,e,t)=>e in r?$e(r,e,{enumerable:!0,config
 			<button type="button" class="ac-trigger">
 				<span class="ellipsis">${r}</span>
 				<svg class="ac-arrow">
-					<use href="/images/sprites/ac-arrow.svg#icon-arrow"></use>
+					<use href="images/sprites/ac-arrow.svg#icon-arrow"></use>
 				</svg>
 			</button>
 		</h3>
