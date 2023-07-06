@@ -1,9 +1,11 @@
 .card {
 	--size: 1.5rem;
+	--blur: 1rem;
+	--shadow: 0 0.5rem var(--blur) -0.25rem hsl(var(--clr-p-500-alpha), 0.2);
 
 	text-align: center;
 	padding-block: var(--size);
-	box-shadow: 0 0.5rem 1rem -0.25rem hsl(var(--clr-p-500-alpha), 0.15);
+	box-shadow: var(--shadow);
 	border-radius: 1rem;
 	overflow: hidden;
 	transition: transform var(--time) var(--easing),
@@ -11,8 +13,10 @@
 }
 
 .card:where(:hover, :focus) {
+	--blur: 2rem;
+
 	transform: scale(1.01);
-	box-shadow: 0 0.5rem 2rem -0.25rem hsl(var(--clr-p-500-alpha), 0.15);
+	box-shadow: var(--shadow);
 }
 
 .card__top {

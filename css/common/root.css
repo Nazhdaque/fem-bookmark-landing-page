@@ -13,6 +13,7 @@
 	--clr-n-100-solid: hsl(0, 0%, 100%);
 	--clr-n-200-solid: hsl(0, 0%, 97%);
 	--clr-n-400-solid: hsl(229, 8%, 60%);
+	--clr-n-400-alpha: 229, 8%, 60%;
 	--clr-n-700-solid: hsl(0, 0%, 24%);
 	--clr-n-800-solid: hsl(229, 31%, 21%);
 	--clr-n-800-alpha: 229, 31%, 21%;
@@ -37,4 +38,6 @@
 	--btn-border-thickness: 0.1rem;
 	--btn-p-block: 1em;
 	--btn-p-inline: 1.5em;
+
+	--line: 1px solid hsl(var(--clr-n-400-alpha), 0.5);
 }

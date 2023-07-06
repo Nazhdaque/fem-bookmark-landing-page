@@ -1,5 +1,5 @@
 .btn {
-	--btn-shadow: 0 0.85em 0.5em -0.5em hsl(var(--clr-p-500-alpha), 0.15);
+	--btn-shadow: 0 0.85em 0.5em -0.5em hsl(var(--clr-p-500-alpha), 0.2);
 
 	color: var(--btn-clr-txt);
 	background-color: var(--btn-clr-bg);

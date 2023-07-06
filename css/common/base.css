@@ -9,11 +9,6 @@
 	display: block;
 }
 
-:where(h1, h2, h3) {
-	color: var(--clr-n-800-solid);
-	line-height: var(--lh-sm);
-}
-
 :where(ul, ol) {
 	list-style: none;
 }

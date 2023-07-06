@@ -15,7 +15,7 @@
 	text-align: center;
 	outline: none;
 	transition: color var(--time) var(--easing);
-	border-bottom: 1px solid var(--clr-n-400-solid);
+	border-bottom: var(--line);
 }
 .tab::before {
 	content: "";

@@ -18,6 +18,12 @@
 	--lh-rg: 1.5;
 }
 
+:where(.ttl-lg, .ttl-md, .ttl-sm) {
+	color: var(--clr-n-800-solid);
+	line-height: var(--lh-sm);
+	font-weight: var(--fw-md);
+}
+
 .ttl-lg {
 	font-size: var(--fs-900);
 }
