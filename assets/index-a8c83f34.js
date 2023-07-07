@@ -8,7 +8,7 @@ var be=Object.defineProperty;var ve=(r,e,t)=>e in r?be(r,e,{enumerable:!0,config
 	<li role="presentation">
 		<a
 			href="#section-${r+1}"
-			class="tab"
+			class="tab r"
 			role="tab"
 			id="tab-${r+1}"
 			tabindex="${r===0?0:-1}"
@@ -45,7 +45,7 @@ var be=Object.defineProperty;var ve=(r,e,t)=>e in r?be(r,e,{enumerable:!0,config
 	<ul class="txt-rg tablist md--grid-temp-col-1" role="tablist">
 		${r}
 	</ul>
-`;Ve.get("tabs-data.json").then(r=>{r.forEach((t,s)=>{const{tab:i,title:o,text:l}=t,n=Pe(s,i),d=Ne(s,o,l);re.push(n),ie.push(d)});const e=je(re);j(e,Me),j(ie,Te),document.querySelectorAll("[aria-hidden='true']").forEach(t=>t.removeAttribute("aria-hidden")),ae(()=>import("./tabs-f9cd3865.js"),[]).then(t=>t)});const He=document.querySelector(".cards"),le={chrome:62,firefox:55,opera:46},Oe=r=>r[0].toUpperCase()+r.slice(1),qe=(r,e)=>E`
+`;Ve.get("tabs-data.json").then(r=>{r.forEach((t,s)=>{const{tab:i,title:o,text:l}=t,n=Pe(s,i),d=Ne(s,o,l);re.push(n),ie.push(d)});const e=je(re);j(e,Me),j(ie,Te),document.querySelectorAll("[aria-hidden='true']").forEach(t=>t.removeAttribute("aria-hidden")),ae(()=>import("./tabs-191b7ff1.js"),[]).then(t=>t)});const He=document.querySelector(".cards"),le={chrome:62,firefox:55,opera:46},Oe=r=>r[0].toUpperCase()+r.slice(1),qe=(r,e)=>E`
 	<div class="card grid-items-c">
 		<div class="card__top">
 			<svg class="card__img">
