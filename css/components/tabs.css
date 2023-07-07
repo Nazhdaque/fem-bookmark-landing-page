@@ -20,7 +20,6 @@
 .tab::before {
 	content: "";
 	grid-row: 2;
-	margin-inline: auto;
 	width: 0;
 	height: var(--thickness);
 	background-color: var(--clr-p-400-solid);
@@ -29,6 +28,13 @@
 }
 .tab:where(:hover, :focus-visible) {
 	color: var(--clr-p-400-solid);
+}
+
+.tab.r::before {
+	margin-inline-start: auto;
+}
+.tab.l::before {
+	margin-inline-end: auto;
 }
 
 .tablist [aria-selected="true"]:not(:focus-visible) {

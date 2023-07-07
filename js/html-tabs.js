@@ -11,7 +11,7 @@ const tabTemplate = (index, tabName) => html`
 	<li role="presentation">
 		<a
 			href="#section-${index + 1}"
-			class="tab"
+			class="tab r"
 			role="tab"
 			id="tab-${index + 1}"
 			tabindex="${index === 0 ? 0 : -1}"
