@@ -31,6 +31,10 @@
 .input-field::placeholder {
 	opacity: 0.25;
 }
+.input-field:focus-visible::placeholder {
+	color: var(--clr-p-500-solid);
+	opacity: 0.75;
+}
 
 /* |||||||||||||||||||||||||||||||||||||||||||||||||| validation */
 .labels {
